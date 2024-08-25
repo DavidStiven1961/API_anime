@@ -6,11 +6,11 @@ class personaje(BaseModel):
 
 
     anime: str 
-    nombre: str = Field(max_length=15)
+    nombre: str = Field(max_length=40)
     nacimiento: str
     edad: int = Field(ge=0,le=100)
     altura: str
-    tipo_sangre: str = Field(max_length=1)
+    tipo_sangre: str = Field(max_length=2)
     interes: str
 
     class config:

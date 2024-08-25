@@ -9,8 +9,9 @@ class Character(Base):
 
     id = Column(Integer(), primary_key=True, autoincrement=True, unique=True)
     anime = Column(String(20))
-    nombre= Column(String(20))
+    nombre= Column(String(40))
     nacimiento = Column(String(20))
     edad= Column(Integer())
     altura= Column(String(20))
     tipo_sangre= Column(String(20))
+    interes= Column(String(20))

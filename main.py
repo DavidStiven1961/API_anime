@@ -10,6 +10,7 @@ app.include_router(personaje_router)
 app.title = "Mi primera API hecha solo"
 app.version = "0.01"
 
+
 Base.metadata.create_all(bind=engine)
 
 @app.get('/')
